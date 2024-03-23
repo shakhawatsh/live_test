@@ -38,7 +38,7 @@ class home extends StatelessWidget {
             fontWeight: FontWeight.bold,
             backgroundColor: Colors.green,
             color: Colors.white,
-            overflow: TextOverflow.ellipsis,
+            overflow: TextOverflow.fade,
 
           ),
         ),
