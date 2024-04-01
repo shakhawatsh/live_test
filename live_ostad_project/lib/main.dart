@@ -1,72 +1,80 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Myapp());
 }
 
-class MyApp extends StatelessWidget {
+class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Home(),
+      home: HomePage(),
     );
   }
 }
 
-class Home extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                showDialog(
-                    context: context,
-                    builder: (context) {
-                      return AlertDialog(
-                        title: Text('Sending Money'),
-                        content: Text('Are you want to send money?'),
-                        actions: [
-                          Row(
-                            children: [
-                              TextButton(onPressed: () {Navigator.of(context).pop(ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Sended!'))));}, child: Text('Yes')),
-                              TextButton(onPressed: () {Navigator.of(context).pop(ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Canceled!'))));}, child: Text('No'))
-                            ],
-                          )
-                        ],
-                      );
-                    });
-                /*ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('sended'),
-               backgroundColor: Colors.green,
-               duration: Duration(seconds: 1),));*/
-              },
-              icon: Icon(Icons.send)),
-        ],
-        backgroundColor: Colors.lightBlue,
-        title: Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Icon(Icons.home_filled, size: 33),
-            Text('Home'),
-          ],
-        ),
+        title: Text('Home'),
+        leading: Icon(Icons.home),
+        backgroundColor: Colors.green,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
           children: [
-            Text('Hello'),
-            Text('World'),
-            Text('from Shakhawat Shuvo'),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [Text('Row under '), Text('a column')],
+            ElevatedButton(
+              onPressed: () {},
+              child: Text('Press'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  elevation: 22,
+                  padding: EdgeInsets.all(20),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  )),
+            ),
+            TextButton(
+              style: TextButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  )
+              ),
+              onPressed: () {},
+              child: Text('Text Button'),
+            ),
+
+            GestureDetector(
+              onTap: () {
+                print('on Tap');
+              },
+              child: Icon(Icons.add_a_photo),
+            ),
+
+            Padding(
+
+              padding: EdgeInsets.all(12),
+
+              child: TextField(
+                maxLength: 30,
+              style: TextStyle(),
+              decoration: InputDecoration(
+                hintText: 'Your email',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                label: Text('Email'),
+
+              ),
+            ),
+
             )
           ],
         ),
