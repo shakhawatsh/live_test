@@ -21,7 +21,10 @@ class HomePage extends StatelessWidget {
       'sazin',
       'sashee',
       'jojo',
-      'althu'
+      'althu',
+      'innin',
+      'dicin',
+      'hitu'
     ];
 
     return Scaffold(
