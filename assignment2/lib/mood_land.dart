@@ -149,7 +149,7 @@ class MoodLand extends StatelessWidget{
                        ),
                        Row(
                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                         crossAxisAlignment: CrossAxisAlignment.center,
+                         crossAxisAlignment: CrossAxisAlignment.start,
                          children: [
                            Container(
                              alignment: AlignmentDirectional.bottomStart,

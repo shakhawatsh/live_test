@@ -80,7 +80,7 @@ class HomePort extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(20.0),
               child: GestureDetector(
                 onTap: () {
                   if (index == 0) {
@@ -103,7 +103,7 @@ class HomePort extends StatelessWidget {
                       image: NetworkImage(_photo[index].image),
                       fit: BoxFit.cover,
                     ),
-                    borderRadius: BorderRadius.circular(18),
+                    borderRadius: BorderRadius.circular(30),
                     boxShadow: const [
                       BoxShadow(
                         color: Color.fromRGBO(0, 0, 0, 0.5),
