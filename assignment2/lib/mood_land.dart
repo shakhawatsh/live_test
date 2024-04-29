@@ -44,6 +44,50 @@ class MoodLand extends StatelessWidget{
         elevation: 70,
       ),
       body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Expanded(
+              child:Container(
+                height: 298,
+                width: 372 ,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(
+                    20,
+                  ),
+                  image: const DecorationImage(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                      'https://s3-alpha-sig.figma.com/img/8ae8/8351/d9d8ec2de6a2ad384cd6cc3e473842ef?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EFGX-tZNgbZ8Sn19qQdaZwUpk7NxQOwjSHrN0dAMNdg8txo9mVb0tBomV~8OtEPaSByBIhusZOzPE83~kZ~mRfVEEkJPc3womdhrko7Tah58TUTZH1qaUfW1XIcmFRLEMhEv4cqDDRES2IVG18empbGuSGZpQ2zuf5wuNLWvy1~rlWfi9KUbWMIma-90WPc9~gRBCf8boiub~cZvoWNLwoWz8Lb9lXRwKfn-x8igW-8N8bPzvDHZtIkAN4ibEfCcAReb1w5uF7YLEQ6tXXT0zBmM3XQfYBuA2VQxlN9tdJ99jZ5buEAC4afHkUi3Yceq5Sea2hXKggMrcZ18JiLTYw__',
+                    ),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.9),
+                      spreadRadius: 5,
+                      blurRadius: 8,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+
+              )
+          ),
+          Expanded(
+              child:Column(
+                 children: [
+                   Text('111111111111111111'),
+                   Text('111111111111111111'),
+                   Text('111111111111111111'),
+                   Text('111111111111111111'),
+                 ],
+              )
+          ),
+        ],
+
+
+
+/*
         children: [
           Padding(
             padding: const EdgeInsets.all(15),
@@ -141,15 +185,15 @@ class MoodLand extends StatelessWidget{
                           width: 150,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20,
-          
+
                             ),
-          
+
                             image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: NetworkImage('https://s3-alpha-sig.figma.com/img/f4a3/12b8/7bd99804e59439f7e0f27e9f6cf7ebd3?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kFjZBWFT9IsMmLz1ImaoHmfkyjMjY~wfgZPF~4RuEb~yPfFOZ~zatavmxR~2DmEGjtGr--dfW-aOZygkmNoyuyx5NnB0Fp8Pz1S4wKA6em~I3trQAIdr0JjEDqqW5UA-kSnir6cdu4nHwcK-F2aEbaJDTxCZuLA5fy4LPUuwNBEf11K~1r8C9Sxt8qhGvAv032bbxWOseCeq-p1yosU1bIy3Lw~Hl5RYfZeJiv8wmcMXgqi87Ulpjm0GfeWuTbHqLQwdHS1t6eyfmvJQRqhmLqUpJhlD3EVJTq0u6vD1SA0wgwuOhc9FV2TU2FaOCJmIeOvzKWGEWHIoDwvGXipHsQ__',
                               ),
-          
-          
+
+
                             ),
                             boxShadow: [
                               BoxShadow(
@@ -158,7 +202,7 @@ class MoodLand extends StatelessWidget{
                                 blurRadius: 8,
                                 offset: const Offset(0, 3),
                               ),
-          
+
                             ],
                           ),
                           child: const Text('Dawn', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 18 ),),
@@ -172,15 +216,15 @@ class MoodLand extends StatelessWidget{
                           width: 150,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20,
-          
+
                             ),
-          
+
                             image: const DecorationImage(
                               fit: BoxFit.cover,
                               image: NetworkImage('https://s3-alpha-sig.figma.com/img/d3d4/fda7/97dabb9135a808713597e0ce5441ce5f?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RnESUpkFPXQzhVMeIURdhYNrGRLks0FFS4npS5G14P7KTrW6Lbuah7Plj1FO~POkMNEBHaVmVTIhUpIzgcNATY~vhgVep5W2TpLTAl-9ACVgIqc5HoBt92u7wJ9kH3YY8FIF8WsFTjeIyO0w8rcNVAT7eF1p75dcSpGEK5gkMbqiMBQT-7GjXxf3aTGeylMDsUrHR6PGlqqfAGbox7okQuV4lKtTZflQMez5~bSac-esRVHiueedYvwgyRW2UTPIP9ALA2v~psQRaGwkOlE9q2q0pPLCpqf7rdDXXRj8QIy72GR2Ax-TCE-Gczj6RII6hRYupQvDLcDejca9MxZFgg__',
                               ),
-          
-          
+
+
                             ),
                             boxShadow: [
                               BoxShadow(
@@ -189,7 +233,7 @@ class MoodLand extends StatelessWidget{
                                 blurRadius: 8,
                                 offset: const Offset(0, 3),
                               ),
-          
+
                             ],
                           ),
                           child: const Text('Leaves', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white,fontSize: 18 ),),
@@ -198,17 +242,18 @@ class MoodLand extends StatelessWidget{
                     ],
                   ),
 
-          
-          
-          
-          
-          
+
+
+
+
+
               ],
             ),
           ),
         )
 
         ],
+*/
 
       ),
     );

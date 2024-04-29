@@ -49,7 +49,7 @@ class MoodPort extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.fromLTRB(19, 8, 19, 0),
               child: Center(
                 child: Container(
                   height: 325,
@@ -77,7 +77,7 @@ class MoodPort extends StatelessWidget {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.fromLTRB(33, 8, 15, 0),
+              padding: EdgeInsets.fromLTRB(33, 16, 15, 0),
               child: SizedBox(
                 width: 264,
                 height: 46,
@@ -104,23 +104,26 @@ class MoodPort extends StatelessWidget {
                 ),
               ),
             ),
-            Center(
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  fixedSize: const Size(387, 51),
-                  backgroundColor: const Color.fromRGBO(44, 171, 0, 1),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(200),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(19, 16, 19, 0),
+              child: Center(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(387, 51),
+                    backgroundColor: const Color.fromRGBO(44, 171, 0, 1),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(200),
+                    ),
+                    elevation: 70,
+                    foregroundColor: Colors.white,
+                    textStyle: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
-                  elevation: 70,
-                  foregroundColor: Colors.white,
-                  textStyle: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  child: const Text('See More', textAlign: TextAlign.center),
                 ),
-                child: const Text('See More', textAlign: TextAlign.center),
               ),
             ),
             const Padding(
@@ -140,7 +143,6 @@ class MoodPort extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
                   alignment: AlignmentDirectional.bottomStart,
