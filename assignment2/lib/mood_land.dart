@@ -102,7 +102,7 @@ class MoodLand extends StatelessWidget{
                            height: 65,
                            width: 464,
                            child: Text(
-                             'Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings',
+                             'Being in Nature, or even Viewing Scenes of Nature, Reduces Anger, Fear, And Stress And Increases Pleasant Feelings',
                              style: TextStyle(
                                fontSize: 15,
                                fontWeight: FontWeight.w400,

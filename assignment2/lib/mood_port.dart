@@ -97,7 +97,7 @@ class MoodPort extends StatelessWidget {
                 height: 97,
                 width: 369,
                 child: Text(
-                  'Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings',
+                  'Being in Nature, or even Viewing Scenes of Nature, Reduces Anger, Fear, And Stress And Increases Pleasant Feelings',
                   style: TextStyle(
                     fontSize: 18,
                   ),
