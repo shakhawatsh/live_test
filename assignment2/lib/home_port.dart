@@ -80,7 +80,7 @@ class HomePort extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(10),
               child: GestureDetector(
                 onTap: () {
                   if (index == 0) {

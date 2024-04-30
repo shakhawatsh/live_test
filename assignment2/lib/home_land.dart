@@ -80,7 +80,7 @@ class HomeLand extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.all(25),
+              padding: const EdgeInsets.all(12.5),
               child: GestureDetector(
                 onTap: () {
                   if (index == 0) {
